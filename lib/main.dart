@@ -20,23 +20,85 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 175,
-                width: double.infinity,
-                color: Color(0xFF06FFA5),
-              ),
-              Container(
-                height: 175,
-                width: double.infinity,
-                color: Color(0xFF06FFA5),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(height: 290, width: 150, color: Color(0xFFFFE500)),
-                  Container(height: 290, width: 150, color: Color(0xFFFFE500)),
+                  Container(
+                    height: 155,
+                    width: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF06FFA5),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Container(
+                    height: 155,
+                    width: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF06FFA5),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                 ],
               ),
+              Container(
+                height: 155,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Color(0xFF06FFA5),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              SizedBox(
+                height: 300,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 155,
+                          color: Color(0xFFFFE500),
+                        ),
+                        Container(
+                          height: 110,
+                          width: 155,
+                          color: Color(0xFFFFE500),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 155,
+                          color: Color(0xFF7752FE),
+                        ),
+                        Container(
+                          height: 90,
+                          width: 155,
+                          color: Color(0xFF0E00AC),
+                        ),
+                        Container(
+                          height: 90,
+                          width: 155,
+                          color: Color(0xFF7752FE),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Container(height: 290, width: 150, color: Color(0xFFFFE500)),
+              //     Container(height: 290, width: 150, color: Color(0xFFFFE500)),
+              //   ],
+              // ),
             ],
           ),
         ),
