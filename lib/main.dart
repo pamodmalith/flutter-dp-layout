@@ -16,20 +16,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(backgroundColor: Color(0xFF9E00FF)),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                height: 300,
+                height: 175,
                 width: double.infinity,
                 color: Color(0xFF06FFA5),
               ),
               Container(
-                height: 300,
+                height: 175,
                 width: double.infinity,
-                color: Color(0xFFFFE500),
+                color: Color(0xFF06FFA5),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(height: 290, width: 150, color: Color(0xFFFFE500)),
+                  Container(height: 290, width: 150, color: Color(0xFFFFE500)),
+                ],
               ),
             ],
           ),
